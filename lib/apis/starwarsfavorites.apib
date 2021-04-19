@@ -1,0 +1,31 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# starwarsfavorites
+
+URL Base: http://private-782d3-starwarsfavorites.apiary-mock.com/
+
+## Favorites Collection [/favorite/{id}]
+
+### Create a New Favorite [POST]
+
++ Parameters
+    + id - identificador unico que represente uma pessoa
+
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "status": "success",
+                "message": "May the force be with you"
+            }
+
++ Response 400 (application/json)
+    
+    + Body
+
+            {
+                "error": "internal error",
+                "error_message": "Only at the end do you realize the power of the Dark Side."
+            }
